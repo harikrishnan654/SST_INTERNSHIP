@@ -1,0 +1,53 @@
+<html>
+    <head>
+<script>
+     function validateForm(){
+              
+              var content1=document.getElementById("first").value;
+              if(content1=="")
+              {
+                 // document.write("Enter name");
+                  document.getElementById("l1").innerHTML="Enter content";
+              }
+              else if(isNaN(content1))
+              {
+                  document.getElementById("l1").innerHTML="Enter  value";
+              }
+              var content2=document.getElementById("second").value;
+                    if(content2==""){
+                 // document.write("Enter name");
+                 document.getElementById("l2").innerHTML="Enter content";
+      
+              }
+              else if(isNaN(content2))
+              {
+                  document.getElementById("l2").innerHTML="enter value";
+              }
+             temp=content1
+              content1=content2
+              content2=temp
+              document.getElementById("first").value=content1;
+              document.getElementById("second").value=content2;
+              
+            }
+</script>
+    </head>
+    <body>
+        <center>
+        <table style="width:30%""border="2"bgcolor= yellow>
+            <tr>
+                    <th>content1</th>
+                    <td><input type="text" name="content1" id="first"><br></td>
+                </td><label style="color:red" id="l1"></label></td>
+            </tr>
+            <tr>
+                    <th>content2</th>
+                    <td><input type="text" name="content2" id="second"><br></td>
+                </td><label style="color:red" id="l2"></label></td>
+            </tr>
+
+            <td><button  type="button" onclick="validateForm()">click</button></td>
+        </table>
+    </body>
+</center>
+</html>

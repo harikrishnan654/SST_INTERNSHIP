@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <script>
+            function validateForm(){
+                var name=document.getElementById("name").value;
+                var letters=/^[a-zA-Z\s]+$/;
+                var password=document.getElementById("password").value;
+                var secondpassword=document.getElementById("password2").value;
+                var mail=document.getElementById("email").value;
+                var reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z]{2,4})$/;
+                var age=document.getElementById("age").value;
+                var course=document.getElementById("course").value;
+                var s=0;
+
+                if (name==""){
+                    document.getElementById("11").innerHTML="Enter Name";
+                    s++;
+
+                }
+                else if(Letters.test(name)==false)
+                {
+                    document.getElementById("11").innerHTML="Enter valid Alphabets";
+                    document.getElementById("name").focus();
+                    s++;
+                }
+                else
+                {
+                    document.getElementById("11").innerHTML="";
+                }
+                if(password==""){
+                    document.getElementById("l2").innerHTML="Enter Password";
+                    s++;
+                }
+                else if(password.length<6)
+                {
+                    document.getElementById("l2").innerHTML="password should contain atleast 6 characters"
+                }
+            }
+        </script>
+    </body>
+</html>

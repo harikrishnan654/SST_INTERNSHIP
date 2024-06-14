@@ -1,0 +1,37 @@
+header{
+    display:block;
+    background-color: black;
+}
+footer
+{
+    background-color: black;
+    color:white;
+}
+nav{
+    display:flex;
+    gap: 20px;
+    padding-top:10px;
+    float:right;
+    margin-right:80px;
+}
+.menu-item{
+    display: block;
+    background-color: blue;
+    border-radius:6px;
+}
+.menu-item a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
+}
+table{
+    background-color: rgb(145, 255, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+body{
+    background-color: blue;
+}

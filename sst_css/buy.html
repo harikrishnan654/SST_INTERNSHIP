@@ -1,0 +1,81 @@
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" type="text/css" href="assi2.css">
+        <script>
+            function validateForm(){
+              
+        var quantity=document.getElementById("quantity").value;
+        if(quantity=="")
+        {
+           // document.write("Enter name");
+            document.getElementById("l2").innerHTML="Enter numeric value";
+        }
+        else if(isNaN(quantity))
+        {
+            document.getElementById("l2").innerHTML="Enter  value";
+        }
+        var productprice=document.getElementById("productprice").value;
+              if(productprice==""){
+           // document.write("Enter name");
+           document.getElementById("l3").innerHTML="Enter numeric value";
+
+        }
+        else if(isNaN(productprice))
+        {
+            document.getElementById("l3").innerHTML="enter value";
+        }
+        alert("hello");
+        
+        var total=quantity*productprice;
+        document.getElementById("l4").innerHTML=total;
+    
+    }
+    
+        </script>
+        </head>
+            <nav>
+                <div class="menu-item"><a href="assi1.html">Home</a> </div>
+                <div class="menu-item"><a href="login.html">Login</a> </div>
+                <div class="menu-item"><a href="register.html">Register</a> </div>
+                <div class="menu-item"><a href="product.html">Product</a> </div>
+             </nav>
+             
+ <header>
+        <img src="Free-Download-Creative-Idea-Logo-Design-scaled.jpg" alt="bike" width="200px" height="100px">
+    </header>
+    <center>
+        
+        <table border="1">
+      
+    <tr>
+
+            <th>quantity</th>
+            <td><input type="number" id="quantity"><br></td>
+        </td><label style="color:red" id="l2"></label></td>
+    </tr>
+
+
+<tr>
+
+        <th>product price</th>
+        <td><input type="number" id="productprice"><br></td>
+    </td><label style="color:red" id="l3"></label></td>
+</tr>
+
+
+<tr>
+
+        <th>total price</th>
+        <td><input type="number" id="totalprice"><br></td>
+    </td><label style="color:red" id="l4"></label></td>
+</tr>
+</table>
+        <tr>
+            <td><button  type="button" onclick="validateForm()">click</button></td>
+        </tr>
+        </tr>
+    </center>
+    </body>
+    
+    </html>
